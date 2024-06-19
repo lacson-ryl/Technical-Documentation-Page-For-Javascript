@@ -1,0 +1,135 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, 
+body {
+    display: block;
+    min-width: 290px;
+    color: #ffff;
+    background-color: #1b1b1b;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+#navbar {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 290px;
+    max-width: 300px;
+    height: 100%;
+    border-right: solid;
+    overflow: auto;
+}
+
+#navbar ul {
+    display: block;
+    height: 81%;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+a:link{
+    color: #0065d6;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #ffff;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #0065d6;
+}
+
+a:active{
+    color: #0065d6;
+    text-decoration: none;
+}
+
+p > a:last-of-type {
+    color: #0065d6;
+}
+
+#navbar header{
+    display: block;
+    list-style-type: none;
+    border-bottom: solid;
+    border-color: #ffff;
+    border-width: 1px;
+    padding: 15px 5px 10px;
+    font-size: 1.2em;
+}
+
+#navbar li {
+    display: block;
+    list-style-type: none;
+    border-bottom: solid;
+    border-color: #ffff;
+    border-width: 1px;
+    padding:  15px 5px;
+}
+
+#navbar li:last-of-type {
+    border-color: #1b1b1b;
+}
+
+#main-doc {
+    position: block;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+section {
+    display: block;
+}
+
+header,
+span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #70b3ff;
+}
+
+img {
+    display: block;
+    margin: 10px auto 10px;
+    padding: 10px 0;
+    width: 50%;
+    min-width: 300px;
+    max-width: 800px;
+    max-height: 200px;
+    border: solid;
+    border-color: #e2e2e2;
+}
+
+
+code {
+    display: block;
+    text-align: left;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 0;
+    background-color: #1b1b1b;
+    font-size: 18px;
+}
+
+hr {
+  height: 1px;
+  border: none;
+}
