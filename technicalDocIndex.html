@@ -1,173 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="technicalDocStyles.css" />
-  <title>RL Web Design Service (Detailing Your Own Website According To Your Need)</title>
+  <title>Structure and Styling Web using HTML and CSS</title>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-  <main>
-    <header id="header">
-      <div class="topbar">
-        <div class="logo">
-          <img id="header-img" src="https://i.ibb.co/mBFDq29/rl-webstyling-high-resolution-logo-transparent-3.png"
-        alt="rl-webstyling-high-resolution-logo-transparent-3" border="0">
-          </img>
-        </div>
-        <nav id="nav-bar">
-          <ul>
-            <li><a class="nav-link" href="#features">FEATURES</a></li>
-            <li><a class="nav-link" href="#how-it-works">HOW IT WORKS</a></li>
-            <li><a class="nav-link" href="#pricing">PRICING</a></li>
-          </ul>
-        </nav>
+  <nav id="navbar">
+    <header>Structure & Style
+      Web Design</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#Structuring_the_Web_using_HTML">Structuring the Web using HTML</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#So_What_is_HTML?">So What is HTML?</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Anatomy_of_an_HTML_element">Anatomy of an HTML element</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Element_attributes">Element attributes</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Nesting_Elements">Nesting Elements</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Void_Elements">Void Elements</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Anatomy_of_an_HTML_document">Anatomy of an HTML document</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Styling_the_Web_using_CSS">Styling the Web using CSS</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#So_What_is_CSS?">So What is CSS?</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Anatomy_of_a_CSS_ruleset">Anatomy of a CSS ruleset</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Selecting_Multiple_Elements">Selecting Multiple Elements</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Referrence">Referrence</a>
+      </li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Structuring_the_Web_using_HTML">
+      <header>Structuring the Web using HTML</header>
+      <span>Introduction</span>
+      <article>
+        <p>HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For
+          example, content could be structured within a set of paragraphs, a list of bulleted points, or using images
+          and data tables. As the title suggests, this article will give you a basic understanding of HTML and its
+          functions.</p>
+        <p>To build websites, you should know about HTML — the fundamental technology used to define the structure of a
+          webpage. HTML is used to specify whether your web content should be recognized as a paragraph, list, heading,
+          link, image, multimedia player, form, or one of many other available elements or even a new element that you
+          define.</p>
+      </article>
+    </section>
+    <section class="main-section" id="So_What_is_HTML?">
+      <header>So What is HTML?</header>
+      <article>
+        <p>HTML is a markup language that defines the structure of your content. HTML consists of a series of elements,
+          which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a
+          certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can
+          make the font bigger or smaller, and so on.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Anatomy_of_an_HTML_element">
+      <header>Anatomy of an HTML element</header>
+      <div class="example_code">
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-small.png" alt="example code" />
       </div>
-    </header>
-    <div class="container1">
-      <section id="hero">
-        <h2>Detailing Your Own Website According To Your Need</h2>
-        <form id="form" name="email" method="post" action="https://www.freecodecamp.com/email-submit">
-          <input id="email" name="email" type="email" placeholder="Enter your Email here..." required autocomplete />
-          <input id="submit" type="submit" value="Get in Contact with Us" />
-        </form>
-      </section>
-    </div>
-    <div class="container2">
-      <section role="features" id="features">
-        <div class="feat">
-          <div class="icon">
-            <a>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M20.25 6H3.75A2.25 2.25 0 0 0 1.5 8.25v10.5A2.25 2.25 0 0 0 3.75 21h16.5a2.25 2.25 0 0 0 2.25-2.25V8.25A2.25 2.25 0 0 0 20.25 6Z">
-                </path>
-                <path d="M6.75 6V4.5A1.5 1.5 0 0 1 8.25 3h7.5a1.5 1.5 0 0 1 1.5 1.5V6"></path>
-                <path d="M22.5 11.25h-21"></path>
-                <path d="M15 11.25v1.125a.375.375 0 0 1-.375.375h-5.25A.375.375 0 0 1 9 12.375V11.25"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="description">
-            <h2>Professional Developers</h2>
-            <p>
-              Our team of professional web developers has the experience and skills necessary to create a custom web
-              page that will attract potential clients and customers. We work with you to understand your business needs
-              and vision, and we use our expertise to create a website that will help you maximize your profits.
-            </p>
-          </div>
-        </div>
-
-        <div class="feat">
-          <div class="icon">
-            <a>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M14.25 18v-1.125c0-1.36 1.479-2.645 2.438-3.563 1.351-1.292 2.062-3.028 2.062-5.062 0-3.75-2.987-6.75-6.75-6.75a6.731 6.731 0 0 0-6.75 6.75c0 1.961.741 3.815 2.063 5.063.953.9 2.437 2.189 2.437 3.562V18">
-                </path>
-                <path d="M10.5 22.5h3"></path>
-                <path d="M9.75 20.25h4.5"></path>
-                <path d="M12 18v-6"></path>
-                <path d="M13.781 11.25S12.773 12 12 12c-.773 0-1.781-.75-1.781-.75"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="description">
-            <h2>Custom Design</h2>
-            <p>We believe that every client is unique and deserves a design that is tailored to their specific wants and
-              needs. We take the time to understand your vision and create a custom design that is both unique and
-              appropriate for you. </p>
-          </div>
-        </div>
-
-        <div class="feat">
-          <div class="icon">
-            <a>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="m1.66 8.822 9.74 12.631a.758.758 0 0 0 1.202 0l9.739-12.63a.774.774 0 0 0 .044-.88l-3.303-5.332a.76.76 0 0 0-.647-.361H5.565a.76.76 0 0 0-.646.361L1.616 7.943a.774.774 0 0 0 .044.88v0Z">
-                </path>
-                <path d="M2.25 8.25h19.5"></path>
-                <path d="M18.75 3 16.5 8.25l-4.5-6"></path>
-                <path d="M5.25 3 7.5 8.25l4.5-6"></path>
-                <path d="M12 21 7.5 8.25"></path>
-                <path d="m12 21 4.5-12.75"></path>
-              </svg>
-            </a>
-          </div>
-          <div class="description">
-            <h2>Quality Assurance</h2>
-            <p>Is an essential part of our service. We ensure that every web page is free of technical bugs and issues,
-              easy to maintain, and runs smoothly and continuously. Additionally, we conduct monthly checks to ensure
-              that your web page is always up-to-date and running smoothly.”
-          </div>
-        </div>
-      </section>
-
-      <section role="how-it-works" id="how-it-works">
-        <div class="container3">
-          <iframe id="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/gQRsgFw7tcg?si=-NZgm20tsOkN1dwO"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </section>
-
-      <section role="pricing" id="pricing">
-        <div class="product" id="basic">
-          <div class="serviceplan">Basic Service</div>
-          <h2>$800</h2>
-          <ul>
-            <li>Custom design</li>
-            <li>Basic SEO optimization</li>
-            <li>Mobile responsiveness</li>
-            <li>Contact form</li>
-            <li>Monthly web page check for 3 months</li>
-          </ul>
-          <button class="btn">Select</button>
-        </div>
-
-        <div class="product" id="advance">
-          <div class="serviceplan">Advance Service</div>
-          <h2>$1500</h2>
-          <ul>
-            <li>All services from the Basic Plan</li>
-            <li>Advanced SEO optimization</li>
-            <li>Social media integration</li>
-            <li>Google Analytics integration</li>
-            <li>Blog integration</li>
-            <li>Monthly web page check for 6+1 months</li>
-          </ul>
-          <button class="btn">Select</button>
-        </div>
-
-        <div class="product" id="premium">
-          <div class="serviceplan">Premium </div>
-          <h2>$3000</h2>
-          <ul>
-            <li>All services from the Advanced Plan</li>
-            <li>E-commerce integration</li>
-            <li>Payment gateway integration</li>
-            <li>Advanced security features</li>
-            <li>Customized reporting</li>
-            <li>Monthly web page check for 12+3 months</li>
-          </ul>
-          <button class="btn">Select</button>
-        </div>
-        
-      </section>
-      <footer>
+      <article>
+        <p>The main parts of our element are as follows:</p>
         <ul>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Contact</a></li>
+          <li id="bullet"><strong>The opening tag:</strong> This consists of the name of the element (in this case, p),
+            wrapped in
+            opening and
+            closing angle brackets. This states where the element begins or starts to take effect — in this case where
+            the paragraph begins.</li>
+          <li id="bullet"><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes
+            a forward
+            slash before the
+            element name. This states where the element ends — in this case where the paragraph ends. Failing to add a
+            closing tag is one of the standard beginner errors and can lead to strange results.</li>
+          <li id="bullet"><strong>The content:</strong> This is the content of the element, which in this case, is just
+            text.</li>
+          <li id="bullet"><strong>The element:</strong> The opening tag, the closing tag, and the content together
+            comprise the
+            element.</li>
         </ul>
-        <span>Copyright 2023, RL WebStyling</span>
-      </footer>
-    </div>
+        <p>Other examples of HTML code Format</p>
+        <pre>
+          <code>
+           &lt;title&gt;Structure and Styling Web using HTML and CSS&lt;/title&gt;
+          </code>
+        </pre>
+        <pre>
+          <code>
+           &lt;header&gt;Structure and Style Web Design&lt;/header&gt;
+          </code>
+        </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Element_attributes">
+      <header>Element attributes</header>
+      <div class="example_code">
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/grumpy-cat-attribute-small.png" alt="example code" />
+      </div>
+      <article>
+        <p>Attributes contain extra information about the element that you don't want to appear in the actual content.
+          Here, class is the attribute name and editor-note is the attribute value. The class attribute allows you to
+          give the element a non-unique identifier that can be used to target it (and any other elements with the same
+          class value) with style information and other things. Some attributes have no value, such as required.</p>
+        <p>Attributes that set a value always have:</p>
+        <ul>
+          <li id="number">A space between it and the element name (or the previous attribute, if the element already has
+            one or more attributes).</li>
+          <li id="number">The attribute name followed by an equal sign.</li>
+          <li id="number">The attribute value wrapped by opening and closing quotation marks.</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="Nesting_Elements">
+      <header>Nesting Elements</header>
+      <article>
+        <p>You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat
+          is very grumpy, we could wrap the word "very" in a &lt;strong&gt element, which means that the word is to be
+          strongly emphasized: The elements have to open and close correctly so that they are clearly inside or outside
+          one another.
+        </p>
+        <pre>
+          <code>
+           &lt;p&gt;My cat is &lt;strong&gtvery&lt;/strong&gt grumpy.&lt;/p&gt;
+          </code>
+        </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Void_Elements">
+      <header>Void Elements</header>
+      <article>
+        <p>Some elements have no content and are called void elements. Take the &lt;img&gt element that we already have
+          in our HTML page:
+        </p>
+        <pre>
+          <code>
+           &lt;img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freecodecamplogo" /&gt;
+          </code>
+        </pre>
+        <p>This contains two attributes, but there is no closing &lt;/img&gt; tag and no inner content. This is because
+          an
+          image element doesn't wrap content to affect it. Its purpose is to embed an image in the HTML page in the
+          place it appears.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Anatomy_of_an_HTML_document">
+      <header>Anatomy of an HTML document</header>
+      <article>
+        <p>That wraps up the basics of individual HTML elements, but they aren't handy on their own. Now we'll look at
+          how individual elements are combined to form an entire HTML page.</p>
+        <pre>
+            <code><hr>
+              &lt;!DOCTYPE html&gt;<hr>
+              &lt;html lang="en-US"&gt;<hr>
+                &lt;head&gt;<hr>
+                  &lt;meta charset="utf-8" /&gt;<hr>
+                  &lt;meta name="viewport" content="width=device-width" /&gt;<hr>
+                  &lt;title&gt;Structure and Styling Web using HTML and CSS&lt;/title&gt;<hr>
+                &lt;/head&gt;<hr>
+                &lt;body&gt;<hr>
+                &lt;img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freecodecamplogo" /&gt;<hr>
+                &lt;/body&gt;<hr>
+              &lt;/html&gt;
+            </code>
+          </pre>
+        <p>Here, we have the following:</p>
+        <ul>
+          <li>
+            <strong> &lt;!DOCTYPE html&gt; </strong> — doctype. It is a required preamble. In the mists of time, when
+            HTML was young
+            (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML page had to follow to
+            be considered good HTML, which could mean automatic error checking and other useful things. However, these
+            days, they don't do much and are basically just needed to make sure your document behaves correctly. That's
+            all you need to know for now.
+          </li>
+          <li>
+            <strong> &lt;html&gt;&lt;/html&gt; </strong> — the <strong> &lt;html&gt </strong> element. This element
+            wraps all the content
+            on the entire page and is
+            sometimes known as the root element. It also includes the lang attribute, setting the primary language of
+            the document.
+          </li>
+          <li>
+            <strong> &lt;head&gt;&lt;/head&gt; </strong> — the <strong> &lt;head&gt </strong> element. This element acts
+            as a
+            container for all the stuff you want to include on the HTML page that
+            isn't the content you are showing to your page's viewers. This includes things like keywords and a page
+            description that you want to appear in search results, CSS to style our content, character set
+            declarations, and more.
+          </li>
+          <li>
+            <strong> &lt;meta charset="utf-8" /&gt; </strong> — This element sets the character set your document should
+            use to UTF-8 which
+            includes most characters from the vast majority of written languages. Essentially, it can now handle any
+            textual content you might put on it. There is no reason not to set this, and it can help avoid some problems
+            later on.
+          </li>
+          <li>
+            <strong> &lt;meta name="viewport" content="width=device-width" /&gt; </strong> — This viewport element
+            ensures the page renders
+            at the width of viewport, preventing mobile browsers from rendering pages wider than the viewport and then
+            shrinking them down.
+          </li>
+          <li>
+            <strong> &lt;title&gt;&lt;/title&gt; </strong> — <strong> the &lt;title&gt; </strong> element. This sets the
+            title of
+            your page, which is the title that
+            appears in the browser tab the page is loaded in. It is also used to describe the page when you
+            bookmark/favorite it.
+          </li>
+          <li>
+            <strong> &lt;body&gt;&lt;/body&gt; </strong> — the <strong> &lt;body&gt; </strong> element. This contains
+            all the
+            content that you want to show to
+            web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or
+            whatever else.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <hr>
+    <hr>
+    <section class="main-section" id="Styling_the_Web_using_CSS">
+      <header>Styling the Web using CSS</header>
+      <span>Introduction</span>
+      <article>
+        <p>Cascading Style Sheets — or CSS — is the first technology you should start learning after HTML. While HTML is
+          used to define the structure and semantics of your content, CSS is used to style it and lay it out. For
+          example, you can use CSS to alter the font, color, size, and spacing of your content, split it into multiple
+          columns, or add animations and other decorative features.</p>
+        <p>CSS (Cascading Style Sheets) is the code that styles web content. CSS basics walks through what you need to
+          get started. We'll answer questions like: How do I make text red? How do I make content display at a certain
+          location in the (webpage) layout? How do I decorate my webpage with background images and colors?</p>
+      </article>
+    </section>
+    <section class="main-section" id="So_What_is_CSS?">
+      <header>So What is CSS?</header>
+      <article>
+        <p>Like HTML, CSS is not a programming language. It's not a markup language either. CSS is a style sheet
+          language. CSS is what you use to selectively style HTML elements. For example, this CSS selects paragraph
+          text, setting the color to red:</p>
+        <pre>
+          <code>
+            p { <hr>
+              color: red; <hr>
+            }
+          </code>
+        </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Anatomy_of_a_CSS_ruleset">
+      <header>Anatomy of a CSS ruleset</header>
+      <article>
+        <p>Let's dissect the CSS code for red paragraph text to understand how it works:</p>
+        <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png" alt="css_code_example" />
+        <p>The whole structure is called a ruleset. (The term ruleset is often referred to as just rule.) Note the names of the individual parts:</p>
+        <ul>
+          <li id="number"><strong>Selector</strong> -- This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, &lt;p&gt elements). To style a different element, change the selector.</li>
+          <li id="number"><strong>Declaration</strong> -- This is a single rule like color: red;. It specifies which of the element's properties you want to style.</li>
+          <li id="number"><strong>Properties</strong> -- These are ways in which you can style an HTML element. (In this example, color is a property of the &lt;p&gt elements.) In CSS, you choose which properties you want to affect in the rule.</li>
+          <li id="number"><strong>Property value</strong> -- To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)</li>
+        </ul>
+        <p>Note the other important parts of the syntax:</p>
+        <ul>
+          <li id="bullet">Apart from the selector, each ruleset must be wrapped in curly braces. ({}) </li>
+          <li id="bullet">Within each declaration, you must use a colon (:) to separate the property from its value or values.</li>
+          <li id="bullet">Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.</li>
+        </ul>
+        <pre>
+          <code>
+            p { <hr>
+              color: red; <hr>
+              width: 500px; <hr>
+              border: 1px solid black; <hr>
+              }
+          </code>
+        </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Selecting_Multiple_Elements">
+      <header>Selecting Multiple Elements</header>
+      <article>
+        <p>You can also select multiple elements and apply a single ruleset to all of them. Separate multiple selectors
+          by commas. For example:</p>
+        <pre>
+          <code>
+            p, <hr>
+            li, <hr>
+            h1 { <hr>
+              color: red; <hr>
+              width: 500px; <hr>
+              border: 1px solid black; <hr>
+              }
+          </code>
+        </pre>
+      </article>
+    </section>
+    <section class="main-section" id="Referrence">
+      <header>Referrence</header>
+      <article>
+        <p>All the documentation in this page are sourced from <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">MDN</a>.</p>
+      </article>
+    </section>
   </main>
 </body>
 
